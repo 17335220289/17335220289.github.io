@@ -152,30 +152,68 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-李林风的博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-JAVA面向对象程序设计" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/10/李林风的博客/">李林风的博客</a>
+      <a class="article-title" href="/2019/10/11/JAVA面向对象程序设计/">JAVA面向对象程序设计</a>
     </h1>
   
 
         
-        <a href="/2019/10/10/李林风的博客/" class="archive-article-date">
-  	<time datetime="2019-10-10T14:47:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
+        <a href="/2019/10/11/JAVA面向对象程序设计/" class="archive-article-date">
+  	<time datetime="2019-10-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h1><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">谢谢大佬参观</span><br></pre></td></tr></table></figure>
+        <h4 id="第二章-类和对象的创建"><a href="#第二章-类和对象的创建" class="headerlink" title="第二章  类和对象的创建"></a>第二章  类和对象的创建</h4><h5 id="1-面向对象的概念"><a href="#1-面向对象的概念" class="headerlink" title="1.面向对象的概念"></a>1.面向对象的概念</h5><pre><code>面向对象的思想是把一个项目，一件事情分成更小的项目，或者说分成一个个更小的部分，
+每一部分负责什么方面的功能，最后再由这些部分组合而成为一个整体。</code></pre><h5 id="2-类的创建"><a href="#2-类的创建" class="headerlink" title="2.类的创建"></a>2.类的创建</h5><table><tr><td bgcolor="#00ffff">
+    语法：public class 类名{}
+    File--->new--->class--->类名
+    </td></tr></table>
 
+<h5 id="3-创建对象"><a href="#3-创建对象" class="headerlink" title="3.创建对象"></a>3.创建对象</h5><table>
+    <tr>
+        <td bgcolor="#00ffff">
+            类名 对象名 =new 类名()；
+    对象名.方法名()；对象名.属性
+        </td>
+    </tr>
+</table>
 
+<h5 id="4-构造方法：方法名和类名相同，没有返回值"><a href="#4-构造方法：方法名和类名相同，没有返回值" class="headerlink" title="4.构造方法：方法名和类名相同，没有返回值"></a>4.构造方法：方法名和类名相同，没有返回值</h5><table>
+    <tr>
+        <td bgcolor="#00ffff">
+            public class 类名{
+        public 类名（）{}//主要作用是初始化操作
+    }
+        </td>
+    </tr>
+</table>
+
+<h5 id="5-构造方法的重载：在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法"><a href="#5-构造方法的重载：在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法" class="headerlink" title="5.构造方法的重载：在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法"></a>5.构造方法的重载：在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   public class 类名&#123;</span><br><span class="line">	public 类名（）&#123;&#125;</span><br><span class="line">	public 类名（String name，int age）&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="6-构造方法的执行："><a href="#6-构造方法的执行：" class="headerlink" title="6.构造方法的执行："></a>6.构造方法的执行：</h5><table><tr><td bgcolor="#00ffff">new  类名（）；--->执行构造方法
+    super（）；--->执行了父类的构造方法</td></tr></table>
+
+<h5 id="7-static静态修饰符"><a href="#7-static静态修饰符" class="headerlink" title="7.static静态修饰符"></a>7.static静态修饰符</h5><table><tr><td bgcolor="#00ffff">
+
+<pre><code>静态修饰符可以修饰属性，方法，代码块
+类名.属性 类名.方法名&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre><h5 id="8-Java内存（栈和堆，static，方法区，gc（垃圾回收机制））"><a href="#8-Java内存（栈和堆，static，方法区，gc（垃圾回收机制））" class="headerlink" title="8.Java内存（栈和堆，static，方法区，gc（垃圾回收机制））"></a>8.Java内存（栈和堆，static，方法区，gc（垃圾回收机制））</h5><hr>
+<h4 id="第三章-面向对象三大特征—封装"><a href="#第三章-面向对象三大特征—封装" class="headerlink" title="第三章  面向对象三大特征—封装"></a>第三章  面向对象三大特征—封装</h4><h5 id="1-封装的概念"><a href="#1-封装的概念" class="headerlink" title="1.封装的概念"></a>1.封装的概念</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">封装是指将对象的状态信息隐藏在对象内部，不允许外部程序直接访问对象内部信息</span><br><span class="line">而是通过该类所提供的方法来实现对内部信息的操作访问</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-封装的步骤"><a href="#2-封装的步骤" class="headerlink" title="2.封装的步骤"></a>2.封装的步骤</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.把属性私有化（private）</span><br><span class="line">2.对这些属性设置get和set方法</span><br><span class="line">3.调用处理这些方法</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-封装的作用：避免一些用户不合理的操作"><a href="#3-封装的作用：避免一些用户不合理的操作" class="headerlink" title="3.封装的作用：避免一些用户不合理的操作"></a>3.封装的作用：避免一些用户不合理的操作</h5><h5 id="4-修饰符"><a href="#4-修饰符" class="headerlink" title="4.修饰符"></a>4.修饰符</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.public---&gt;公共的：在一个项目中都可以访问，权限最高</span><br><span class="line">2.private---&gt;私有的：只能在本类中进行访问，权限最低</span><br><span class="line">3.protected---&gt;安全的，受保护的：同一个包中才能进行访问，继承中子类可以访问父类</span><br><span class="line">4.default---&gt;默认的：同一个包中能访问</span><br></pre></td></tr></table></figure>
+
+<hr>
+</td></tr></table>
       
 
       
@@ -187,7 +225,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/10/李林风的博客/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/10/11/JAVA面向对象程序设计/">展开全文 >></a>
         </p>
       
 
